@@ -20,7 +20,12 @@ You can try it out at [cellpond.cool](https://cellpond.cool)<br>
 Or, you can [download the source code](https://github.com/TodePond/CellPond/archive/refs/heads/main.zip) and open `index.html` in a browser.
 
 ## How does it work? What do all the shapes do?
-It's a secret.
+We finally discovered the secret!<br>
+triangle: used in the color boxes and commands<br>
+circle: says the code of how it will react<br>
+hexagon: changes the chance of the command happening, the more filled the hexagon is, the higher chance it has<br>
+rectangles with color boxes: the color pickers<br>
+diamond: it was used in color boxes but it got removed<br>
 
 ## Where's the diamond gone?
 
