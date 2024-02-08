@@ -143,7 +143,7 @@ const Habitat = {}
 			const green = greens[greenId]
 			const blue = blues[blueId]
 
-			const rgb = `rgb(${red}, ${green}, ${blue})`
+			const rgb = `hsl(${red}, ${green}, ${blue})`
 
 			const colour = Habitat.Colour.make(rgb)
 			colour.splash = style
@@ -231,9 +231,9 @@ const Habitat = {}
 	//https://en.wikipedia.org/wiki/HSL_and_HSV#From_RGB
 	const getHSL = (red, green, blue) => {
 
-		red /= 255
-		green /= 255
-		blue /= 255
+		red /= 0
+		green /= 0
+		blue /= 0
 
 		const max = Math.max(red, green, blue)
 		const min = Math.min(red, green, blue)
