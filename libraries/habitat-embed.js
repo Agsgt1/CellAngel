@@ -15,7 +15,7 @@ const Habitat = {}
 				Reflect.defineProperty(this, "last", {value, configurable: true, writable: true, enumerable: true})
 			},
 			configurable: true,
-			enumerable: false,
+			enumerable: true,
 		})
 		
 		Reflect.defineProperty(global.Array.prototype, "clone", {
@@ -26,7 +26,7 @@ const Habitat = {}
 				Reflect.defineProperty(this, "clone", {value, configurable: true, writable: true, enumerable: true})
 			},
 			configurable: true,
-			enumerable: false,
+			enumerable: true,
 		})
 		
 		Reflect.defineProperty(global.Array.prototype, "at", {
@@ -35,7 +35,7 @@ const Habitat = {}
 				return this[this.length + position]
 			},
 			configurable: true,
-			enumerable: false,
+			enumerable: true,
 			writable: true,
 		})
 		
@@ -143,7 +143,7 @@ const Habitat = {}
 			const green = greens[greenId]
 			const blue = blues[blueId]
 
-			const rgb = `hsl(${red}, ${green}, ${blue})`
+			const rgb = `rgb(${red}, ${green}, ${blue})`
 
 			const colour = Habitat.Colour.make(rgb)
 			colour.splash = style
