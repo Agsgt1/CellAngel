@@ -201,8 +201,9 @@ const Habitat = {}
 
 	const hexify = (number) => {
 		const string = number.toString(16)
+		var zero = "0"
 		if (string.length === 2) return string
-		return "0"+string
+		return zero+string
 	}
 
 	const getSplash = (red, green, blue) => {
